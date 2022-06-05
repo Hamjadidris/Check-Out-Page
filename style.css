@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.section1{
+    flex-basis: 60%;    
+    padding: 10vh 5vw;
+    background-color: #89ABE3;
+    background-image: url(img/Rectangle\ 1.png);
+    background-position:bottom left;
+    background-repeat: no-repeat;
+    color: #FCF6F5;
+}
+.payment-selector{
+    display: flex;
+    gap: 2vw;
+    border-bottom: 1px solid #FCF6F5;
+    width: 50%;
+}
+ .payment-selector :nth-child(1){
+    flex-basis: 50%;
+    border-bottom: 3px solid #FCF6F5;
+}
+.card-information{
+    font-size: 2em;
+}
+.section1 img{
+    margin: 7vh 0;
+}
+.user{
+    margin: 2vh 0;
+    padding: 1vh 0;
+    width: 50%;
+    border-bottom: 1px solid #FCF6F5;
+}
+.user h4{
+    margin: 1vh 0;
+    color: rgba(252, 246, 245, 0.7);
+}
+.user h3{
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+.dates{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin: 4vh 0;
+}
+.dates div{
+    border-bottom: 1px solid #FCF6F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dates h4{
+    color: rgba(252, 246, 245, 0.7);
+    margin-bottom: 3vh;
+}
+.cw img{
+    margin: 0;
+    width: 40%;
+}
+.cw h4{
+    display: flex;
+    align-items: center;
+}
+.button{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+.button button{
+    width: 60%;
+    padding: 1.5vh 0;
+    color: #89ABE3;
+    background-color: #FCF6F5;
+    border: none;
+    border-radius: 16px;
+
+}
+.aside{
+    flex-basis: 40%;
+    padding: 2vh 3vw;
+    color: #4986E0;
+}
+.back-img{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.main{
+    margin-top: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+
+}
+em{
+    font-size: 2em;
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    width: 80%;
+}
+.features div{
+    width: 100%;
+    display: flex;
+    gap: 4vw;
+}
+
+@media (max-width:600px){
+    body{
+        height: 100%;
+        flex-wrap:wrap-reverse;
+    }
+    .section1{
+        flex-basis: 100%;
+    }
+    .payment-selector{
+        width: 100%;
+    }
+    .user{
+        width: 100%;
+    }
+    .dates{
+        width: 100%;
+    }
+    .button{
+        width: 100%;
+    }
+    .aside{
+        flex-basis: 100%;
+    }
+    .main{
+        margin-top: 0;
+    }
+    .features{
+        display: none;
+    }
+}
